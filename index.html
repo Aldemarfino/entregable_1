@@ -5,91 +5,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entregable 1</title>
+    <style>
+        body {
+            background-color: cornsilk;
+            
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid black;
+            border-width: thick;
+        }
+
+        img {
+            border-radius: 12px;
+            padding: 3px;
+            background-color: black;
+        }
+
+        .subtitle {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        fieldset {
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+
+        }
+
+        .formField {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            padding: 5px;
+            border-radius: 5px;
+            border-color: black;
+            margin: 5px;
+            border-width: thin;
+        }
+
+        li {
+            font-size: medium;
+            font-family: cursive;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        hr {
+            width: 80%;
+            color: gray;
+        }
+
+        .container{
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body>
-    <h1>Hoja de vida</h1>
-    <h1>Sobre Mi</h1>
-    <p>Hola, mi nombre es Aldemar lanes, estudiante de Ingenieria de Sistemas de la Universidad Popular del cesar, y
-        este es el entregable referente a la sección de repositorios Git</p>
-    <h4>Prueba para ver</h4>
-    <br>
-    <img src="usario2.jpg" alt="" width="100" height="100">
-    <br>
-    <h2>Páginas de interes</h2>
-    <ul>
-        <li><a href="https://aulaweb.unicesar.edu.co/">Unicesar</a></li>
-        <li><a href="https://www.youtube.com/?app=desktop&hl=es">Youtube</a></li>
-    </ul>
-
-    <h2>Hobbies</h2>
-    <ol>
-        <li>Caminar</li>
-        <li>Correr</li>
-        <li>Cubo de Rubik</li>
-    </ol>
-    <h2>Cosas pendientes</h2>
-    <ol>
-        <li>Hacer el almuerzo</li>
-        <li>Encontrar laburo</li>
-        <li>El proyecto de programación movil</li>
-    </ol>
-    <h2>Horarios</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Dia</th>
-                <th>Actividad Principal</th>
-                <th>Actividad Secundaria</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Lunes</td>
-                <td>Salir a trotar</td>
-                <td>Organizar la casa</td>
-            </tr>
-            <tr>
-                <td>Martes</td>
-                <td>Salir a pasear</td>
-                <td>Hacer almuerzo</td>
-            </tr>
-            <tr>
-                <td>Miercoles</td>
-                <td>Andar en bicicleta</td>
-                <td>Ver una pelicula</td>
-            </tr>
-            <tr>
-                <td>Jueves</td>
-                <td>Resolver ecuaciones</td>
-                <td>Salir a cenar</td>
-            </tr>
-            <tr>
-                <td>Viernes</td>
-                <td>Programar</td>
-                <td>Jugar videojuegos</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Formulario de contacto</h2>
-    <form>
-        <fieldset style="width: fit-content;">
-            <label for="txtNombre">Nombre: </label>
-            <input id="txtNombre" placeholder="Ingrese su nombre" type="text" required>
-            <br>
-
-            <label for="txtCorreo">Correo electrónico: </label>
-            <input id="txtCorreo" placeholder="correo@ejemplo.com" type="email" required>
-            <br>
-
-            <label for="txtTelefono">Numero de Teléfono: </label>
-            <input id="txtTelefono" placeholder="Numero de 10 dígitos" type="number" required>
-            <br>
-            <br>
-            <input type="submit" value="Enviar">
-        </fieldset>
-    </form>
+    <header>
+        <h1>Hoja de vida</h1>
+    </header>
+    <div class="container">
+        <h1 class="subtitle">Sobre Mi</h1>
+        <p>Hola, mi nombre es Aldemar lanes, estudiante de Ingenieria de Sistemas de la Universidad Popular del cesar, y
+            este es el entregable referente a la sección de repositorios Git</p>
+        <br>
+        <img src="usario2.jpg" alt="" width="200" height="200">
+        <br>
+        <hr>
+        <h2 class="subtitle">Páginas de interes</h2>
+        <ul>
+            <li><a href="https://aulaweb.unicesar.edu.co/">Unicesar</a></li>
+            <li><a href="https://www.youtube.com/?app=desktop&hl=es">Youtube</a></li>
+        </ul>
+        <hr>
+        <h2 class="subtitle">Hobbies</h2>
+        <ol>
+            <li>Caminar</li>
+            <li>Correr</li>
+            <li>Cubo de Rubik</li>
+        </ol>
+        <hr>
+        <h2 class="subtitle">Cosas pendientes</h2>
+        <ol>
+            <li>Hacer el almuerzo</li>
+            <li>Encontrar laburo</li>
+            <li>El proyecto de programación movil</li>
+        </ol>
+        <hr>
+        <h2 class="subtitle">Horarios</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Actividad Principal</th>
+                    <th>Actividad Secundaria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>Salir a trotar</td>
+                    <td>Organizar la casa</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>Salir a pasear</td>
+                    <td>Hacer almuerzo</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>Andar en bicicleta</td>
+                    <td>Ver una pelicula</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>Resolver ecuaciones</td>
+                    <td>Salir a cenar</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>Programar</td>
+                    <td>Jugar videojuegos</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2 class="subtitle">Formulario de contacto</h2>
+        <form>
+            <fieldset>
+                <div class="formField">
+                    <label for="txtNombre">Nombre:</label>
+                    <input id="txtNombre" placeholder="Ingrese su nombre" type="text" required>
+                </div>
+                <div class="formField">
+                    <label for="txtCorreo">Correo electrónico:</label>
+                    <input id="txtCorreo" placeholder="correo@ejemplo.com" type="email" required>
+                </div>
+                <div class="formField">
+                    <label for="txtTelefono">Numero de Teléfono:</label>
+                    <input id="txtTelefono" placeholder="Numero de 10 dígitos" type="number" required>
+                </div>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
